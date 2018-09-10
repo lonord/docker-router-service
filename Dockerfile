@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 LABEL maintainer="Loy B. <lonord.b@gmail.com>"
-ENV VERSION 1.2
+ENV VERSION 1.3
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends wget bridge-utils net-tools iptables dnsmasq \
 	&& ARCH="$(dpkg --print-architecture)" \
